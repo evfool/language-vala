@@ -1,0 +1,94 @@
+'.source.vala':
+  'Comment (multiline)':
+    'prefix': '/*'
+    'body': '/*\n * $0\n */'
+  'Console.WriteLine (writeline)':
+    'prefix': 'writeline'
+    'body': 'Console.WriteLine($1);\n$0'
+  'DBus annotation':
+    'prefix': '[DBus'
+    'body': '[DBus(name = "$0")]'
+  'DocBlock':
+    'prefix': '/**'
+    'body': '/**\n * $0\n */'
+  'Gee.ArrayList':
+    'prefix': 'ArrayList'
+    'body': 'Gee.ArrayList<${1:G}>($0);'
+  'Gee.HashMap':
+    'prefix': 'HashMap'
+    'body': 'Gee.HashMap<${1:K},${2:V}>($0);'
+  'Gee.HashSet':
+    'prefix': 'HashSet'
+    'body': 'Gee.HashSet<${1:G}>($0);'
+  'Main function':
+    'prefix': 'main'
+    'body': 'public static int main(string [] argv) {\n\t${0}\n\treturn 0;\n}'
+  'String template (@)':
+    'prefix': '@'
+    'body': '@"${1:\\$var}"'
+  'Verbatim string (""")':
+    'prefix': 'verbatim'
+    'body': '"""$0""";'
+  'case':
+    'prefix': 'case'
+    'body': 'case ${1:condition}:\n\t$0\n\tbreak;\n'
+  'class':
+    'prefix': 'class'
+    'body': '/**\n * ${6}\n */\n${1:public} class ${2:MethodName}${3: : GLib.Object} {\n\n\t/**\n\t * ${7}\n\t */\n\tpublic ${2}(${4}) {\n\t\t${5}\n\t}\n\n\t$0\n}'
+  'closure':
+    'prefix': '=>'
+    'body': '(${1}) => {\n\t${0}\n}\n'
+  'delegate':
+    'prefix': 'delegate'
+    'body': 'delegate ${1:void} ${2:DelegateName}($0);'
+  'do while':
+    'prefix': 'dowhile'
+    'body': 'do {\n\t$0\n} while ($1);\n'
+  'else if (elseif)':
+    'prefix': 'elseif'
+    'body': 'else if ($1) {\n\t$0\n}\n'
+  'else':
+    'prefix': 'else'
+    'body': 'else {\n\t$0\n}'
+  'enum':
+    'prefix': 'enum'
+    'body': 'enum {$1:EnumName} {\n\t$0\n}'
+  'error domain':
+    'prefix': 'errordomain'
+    'body': 'public errordomain ${1:Error} {\n\t$0\n}'
+  'for':
+    'prefix': 'for'
+    'body': 'for ($1;$2;$3) {\n\t$0\n}'
+  'foreach':
+    'prefix': 'foreach'
+    'body': 'foreach ($1 in $2) {\n\t$0\n}'
+  'if':
+    'prefix': 'if'
+    'body': 'if ($1) {\n\t$0\n}'
+  'interface':
+    'prefix': 'interface'
+    'body': 'interface ${1:InterfaceName}{$2: : SuperInterface} {\n\t$0\n}'
+  'namespace (ns)':
+    'prefix': 'ns'
+    'body': 'namespace $1 {\n\t$0\n}\n'
+  'printf':
+    'prefix': 'printf'
+    'body': 'stdout.printf($0);'
+  'property (prop)':
+    'prefix': 'prop'
+    'body': '${1:public} ${2:Type} ${3:Name} {\n\tset {\n\t\t$0\n\t}\n\tget {\n\n\t}\n}'
+  'read-only property (roprop)':
+    'prefix': 'roprop'
+    'body': '${1:public} ${2:Type} ${3:Name} {\n\tget {\n\t\t$0\n\t}\n}'
+  'struct':
+    'prefix': 'struct'
+    'body': 'struct ${1:StructName} {\n\t$0\n}'
+  'switch':
+    'prefix': 'switch'
+    'body': 'switch ($1) {\n\t$0\n}'
+  'try/catch':
+    'prefix': 'try'
+    'body': 'try {\n\t$2\n} catch (${1:Error} e) {\n\t$0\n}'
+  'while':
+    'prefix': 'while'
+    'body': 'while ($1) {\n\t$0\n}'
