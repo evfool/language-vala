@@ -1,0 +1,12 @@
+'.source.vala':
+  'editor':
+    'completions': [
+      'ArrayList'
+      'HashSet'
+      'HashMap'
+      'OptionArg'
+      'OptionContext'
+      'OptionEntry'
+      'stdout'
+      'stderr'
+    ]
