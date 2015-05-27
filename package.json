@@ -1,6 +1,6 @@
 {
   "name": "language-vala",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Vala language support in Atom",
   "repository": "https://github.com/evfool/language-vala",
   "license": "MIT",
