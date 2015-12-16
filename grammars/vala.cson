@@ -1,6 +1,7 @@
 'comment': 'Based heavily on the Java bundle\'s language syntax. TODO:\n* Closures\n* Delegates\n* Properties: Better support for properties.\n* Annotations\n* Error domains\n* Named arguments\n* Array slicing, negative indexes, multidimensional\n* construct blocks\n* lock blocks?\n* regex literals\n* DocBlock syntax highlighting. (Currently importing javadoc)\n* Folding rule for comments.\n'
 'fileTypes': [
   'vala'
+  'vapi'
 ]
 'foldingStartMarker': '(\\{\\s*(//.*)?$|^\\s*// \\{\\{\\{)'
 'foldingStopMarker': '^\\s*(\\}|// \\}\\}\\}$)'
