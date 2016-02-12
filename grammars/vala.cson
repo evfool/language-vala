@@ -159,7 +159,7 @@
       }
     ]
   'class':
-    'begin': '(?=\\w?[\\w\\s]*(?:class|(?:@)?interface|enum|struct|namespace)\\s+\\w+)'
+    'begin': '(?=\\w?[\\w\\s]*(?:class|(?:@)?interface|enum|errordomain|struct|namespace)\\s+\\w+)'
     'comment': 'attempting to put namespace in here.'
     'end': '}'
     'endCaptures':
@@ -179,7 +179,7 @@
             'name': 'storage.modifier.vala'
           '2':
             'name': 'entity.name.type.class.vala'
-        'match': '(class|(?:@)?interface|enum|struct|namespace)\\s+([\\w\\.]+)'
+        'match': '(class|(?:@)?interface|enum|errordomain|struct|namespace)\\s+([\\w\\.]+)'
         'name': 'meta.class.identifier.vala'
       }
       {
