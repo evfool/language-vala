@@ -1,5 +1,6 @@
 '.source.vala':
   'editor':
+    'commentStart': '// ',
     'completions': [
       'ArrayList'
       'HashSet'
