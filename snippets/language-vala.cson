@@ -2,9 +2,6 @@
   'Comment (multiline)':
     'prefix': '/*'
     'body': '/*\n * $0\n */'
-  'Console.WriteLine (writeline)':
-    'prefix': 'writeline'
-    'body': 'Console.WriteLine($1);\n$0'
   'DBus annotation':
     'prefix': '[DBus'
     'body': '[DBus(name = "$0")]'
