@@ -615,7 +615,7 @@
       '1':
         'name': 'storage.modifier.vala'
     'comment': 'Not sure about unsafe and readonly'
-    'match': '\\b(public|private|protected|internal|static|final|sealed|virtual|override|abstract|readonly|volatile|dynamic|async|unsafe|out|ref|weak|owned|unowned|const)\\b'
+    'match': '\\b(public|private|protected|internal|static|final|sealed|virtual|override|abstract|readonly|volatile|dynamic|async|unsafe|out|ref|weak|owned|unowned|const|extern)\\b'
   'strings':
     'patterns': [
       {
