@@ -159,7 +159,7 @@
       }
     ]
   'class':
-    'begin': '(?=\\w?[\\w\\s]*(?:class|(?:@)?interface|enum|errordomain|struct|namespace)\\s+\\w+)'
+    'begin': '(?=\\w?[\\w\\s]*\\b(?:class|(?:@)?interface|enum|errordomain|struct|namespace)\\s+\\w+)'
     'comment': 'attempting to put namespace in here.'
     'end': '}'
     'endCaptures':
@@ -386,7 +386,7 @@
         'name': 'keyword.control.vala'
       }
       {
-        'match': '\\b(return|break|case|continue|default|do|while|for|foreach|switch|if|else|in|yield|get|set|value)\\b'
+        'match': '\\b(return|break|case|continue|default|do|while|for|foreach|switch|if|else|in|yield|get|set|value|construct)\\b'
         'name': 'keyword.control.vala'
       }
       {
