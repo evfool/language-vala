@@ -390,7 +390,7 @@
         'name': 'keyword.control.vala'
       }
       {
-        'match': '\\b(typeof|is|as)\\b'
+        'match': '\\b(typeof|is|as|delete)\\b'
         'name': 'keyword.operator.vala'
       }
       {
@@ -423,7 +423,7 @@
       }
       {
         'match': '(owned|unowned)'
-        'name': 'keyword.operator.ownership'
+        'name': 'keyword.operator.ownership.vala'
       }
     ]
   'methods':
